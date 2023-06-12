@@ -20,13 +20,10 @@ def game(player):
         print('I chose:', foe)
         if (foe == 'Rock' and player == '1') or (foe == 'Paper' and player == '2') or (foe == 'Scissors' and player == '3'):
             print('tie')
-            score = 'Tie'
         elif (foe == 'Rock' and player == '2') or (foe == 'Paper' and player == '3') or (foe == 'Scissors' and player == '1'):
             print('you win!')
-            score = 'Win'
         elif (foe == 'Rock' and player == '3') or (foe == 'Paper' and player == '1') or (foe == 'Scissors' and player == '2'):
             print('you lose... good luck next time')
-            score = 'Lose'
         return game(input('Please select 1(Rock) 2(Paper) 3(Scissors) 4(exit): '))
 
 
